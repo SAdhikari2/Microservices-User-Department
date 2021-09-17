@@ -1,0 +1,18 @@
+server:
+  port: 9002
+  
+  
+spring:
+  application:
+    name: CONFIG-SERVER
+      
+  profiles:   
+    active: native
+    
+    
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SAdhikari2/config-server
+          clone-on-start: true
